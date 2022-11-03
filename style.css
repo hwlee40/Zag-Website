@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Recursive;
+    src: url(RecursiveVariable.ttf);
+  }
+
+body{
+    background: #FBFBFB;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Recursive';
+    font-size: 60vw;
+    margin: 0;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+.container-left{
+    --rgbvalueinverse: 255;
+    background: rgb( var(--rgbvalueinverse),var(--rgbvalueinverse),var(--rgbvalueinverse));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.container-right{
+    --rgbvalue: 0;
+    background: rgb( var(--rgbvalue),var(--rgbvalue),var(--rgbvalue));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.text-left{
+    --wght: 300;
+    --CASL: 0.5;
+    --rgbvalue: 0;
+    color: rgb( var(--rgbvalue),var(--rgbvalue),var(--rgbvalue));
+    font-variation-settings: 'wght' var(--wght), 'CASL' var(--CASL);
+}
+.text-right{
+    --wght2: 300;
+    --CASL: 0.5;
+    --rgbvalueinverse: 255;
+    color: rgb( var(--rgbvalueinverse),var(--rgbvalueinverse),var(--rgbvalueinverse));
+    font-variation-settings: 'wght' var(--wght2), 'CASL' var(--CASL2);
+}
